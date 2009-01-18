@@ -28,9 +28,8 @@ It will move qunit core files (if they are not there):
  * testsuite.css to public/stylesheets/
 
 Also, it will create your js files: 
-/public/javascripts/name_of_lib.js 
-and 
-/test/javascripts/name_of_lib_test.html
+ * /public/javascripts/name_of_lib.js 
+ * /test/javascripts/name_of_lib_test.html
 
 You should place your test to name_of_lib_test.html file.
 
@@ -41,6 +40,29 @@ For running test in opera, firefox, ie and safari, please execute:
 It will try to run specified browsers, open test files, and send results of
 tests to this ruby script.
 
+Output will be similar to this:
+
+  [anton@localhost qunit]$ rake javascript_tests
+  (in /home/anton/projects/mystarstories)
+
+  Skipping Safari, not supported on this OS
+
+  Started tests in Firefox
+  .
+  Finished in 6 seconds.
+  1 tests, 0 failures
+
+  Skipping Internet Explorer, not supported on this OS
+
+  Started tests in Opera
+  Qt: Locales not supported on X server
+  Qt: Locales not supported on X server
+  opera: Activated running instance
+  .
+  Finished in 1 seconds.
+  1 tests, 0 failures
+
+  [anton@localhost qunit]$
 
 == Troubleshooting
 
