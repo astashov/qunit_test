@@ -43,7 +43,7 @@ tests to this ruby script.
 Output will be similar to this:
 
   [anton@localhost qunit]$ rake javascript_tests
-  (in /home/anton/projects/mystarstories)
+  (in /home/anton/projects/qunit)
 
   Skipping Safari, not supported on this OS
 
