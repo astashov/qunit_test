@@ -1,0 +1,56 @@
+== Description
+
+Generator of javascript files with javascript test files and javascript test
+runner in different browsers.
+
+This project was heavily inspired from Dr.Nic's jsunittest project (almost forked),
+but uses QUnit javascript testing framework (works with jQuery) and not so 
+features-riched as jsunittest.
+
+
+== Installation
+
+  git clone git://github.com/astashov/qunit_test.git vendor/plugins/qunit_test
+
+or as submodule
+
+  git submodule add git://github.com/astashov/qunit_test.git vendor/plugins/qunit_test
+
+
+== Using
+
+For creating new javascript file with javascript test file, please execute:
+
+  script/generate javascript_test name_of_lib
+
+It will create files: 
+/public/javascripts/name_of_lib.js 
+and 
+/test/javascripts/name_of_lib_test.html
+
+You should place your test to name_of_lib_test.html file.
+
+For running test in opera, firefox, ie and safari, please execute:
+
+  rake javascript_tests
+
+It will try to run specified browsers, open test files, and send results of
+tests to this ruby script.
+
+
+== Troubleshooting
+
+Sometimes you should close particular browser with test pages to continue testing 
+by next browsers.
+
+
+== Some links to resources that helped me very much
+
+1. http://docs.jquery.com/QUnit - QUnit testing framework
+2. http://jsunittest.com/ - Dr.Nic's testing framework, based on PrototypeJS
+    
+
+== Authors and Credits
+ 
+Written by Anton Astashov, with Brenton Cheng, for Astrology.com (a division of iVillage Inc.)
+Released under the MIT license.
