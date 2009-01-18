@@ -23,7 +23,11 @@ For creating new javascript file with javascript test file, please execute:
 
   script/generate javascript_test name_of_lib
 
-It will create files: 
+It will move qunit core files (if they are not there): 
+ * testrunner.js to public/javascripts/
+ * testsuite.css to public/stylesheets/
+
+Also, it will create your js files: 
 /public/javascripts/name_of_lib.js 
 and 
 /test/javascripts/name_of_lib_test.html
